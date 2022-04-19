@@ -16,7 +16,7 @@ function App() {
         const timeoutID = setTimeout(() => {
             setShowDisney(true);
             setAnimateScreen(false);
-        }, 1000);
+        }, 1500);
     }
 
 
@@ -146,13 +146,18 @@ function App() {
 
         return (
            <div className='disney-container'>
-            { showDisneyTitle && <div className="disney-title">I'm going to Disney World!</div> }
+            { showDisneyTitle && (
+                <div className="disney-title">I'm going to Disney World! <br/>
+                    <span className="disney-sub-title">Beach Club Resort (05/04 - 05/08)</span>
+                </div>
+              )
+            }
            </div>
         )
     }
 
     const renderCake = () => (
-      <div className='card'>
+      <div onClick={() => setShowMakeAWish(!showMakeAWish)} className='card'>
           <div className="title">
               <b>h<span>a</span>pp<span>y</span></b> <br/>
               <b>b<span>ir</span>th<span>d</span>ay</b>
