@@ -241,6 +241,16 @@ body {
    font-weight: 600;
 }
 
+@media only screen and (max-width: 600px) {
+    .disney-title {
+        font-size: 42px;
+    }
+    .disney-sub-title  {
+        font-size: 20px !important;
+        font-weight: 600;
+    }
+}
+
 .hide {
     height: 0 !important;
     width: 0;

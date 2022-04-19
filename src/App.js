@@ -142,7 +142,7 @@ function App() {
 
         const timeoutID = setTimeout(() => {
             setShowDisneyTitle(true);
-        }, 1500);
+        }, 2000);
 
         return (
            <div className='disney-container'>
