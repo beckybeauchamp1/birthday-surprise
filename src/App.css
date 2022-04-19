@@ -226,11 +226,19 @@ body {
 
 .disney-title {
     font-size: 50px;
+    font-weight: 700;
     font-family: 'American Typewriter';
-    margin-top: 4.0rem;
+    position: absolute;
+    z-index: 99999999;
+    top: 15%;
     width: 100%;
     text-align: center;
     color: white;
+}
+
+.disney-sub-title {
+   font-size: 30px !important;
+   font-weight: 600;
 }
 
 .hide {
